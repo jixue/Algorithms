@@ -18,9 +18,18 @@ import java.util.List;
 
     Output:
     [5,6]
+
+ 448.Find All Numbers Disappeared in an Array(https://leetcode.com/problems/find-all-numbers-disappeared-in-an-array/#/description)
  */
 public class DisappearedNumbers {
 
+    /**
+     * 将数组中的各个元素的值转化成数组的下标元素;
+     * 遍历一次数组,如果该下标元素值大于0,转化成负数;如果元素值小于0,不变
+     * 遍历完一次后,再遍历一次数组,这时候数组中值大于0对应的下标即没有出现的元素,因为如果该元素有出现的话,元素下标对应的元素值应该为负数
+     * @param nums
+     * @return
+     */
     public List<Integer> findDisappearedNumbers(int[] nums) {
         List<Integer> result = new ArrayList<Integer>();
         for(int i = 0; i < nums.length; i++){

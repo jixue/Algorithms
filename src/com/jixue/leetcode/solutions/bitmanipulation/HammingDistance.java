@@ -21,12 +21,14 @@ package com.jixue.leetcode.solutions.bitmanipulation;
            ↑   ↑
  The above arrows point to positions where the corresponding bits are different.
  </pre>
+ 461.Hamming Distance (https://leetcode.com/problems/hamming-distance/#/description)
  */
 public class HammingDistance {
 
     /**
      * 根据题目描述不难发现最后要得出x异或y结果的二进制表示中1的个数,
      * 采用n & (n - 1)
+     * 详细解释见:http://www.jianshu.com/p/78ab6e09a2ba
      * @param x
      * @param y
      * @return

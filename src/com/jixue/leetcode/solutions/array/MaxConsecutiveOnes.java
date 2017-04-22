@@ -13,6 +13,8 @@ package com.jixue.leetcode.solutions.array;
     Note:
     The input array will only contain 0 and 1.
     The length of input array is a positive integer and will not exceed 10,000
+
+ 485.Max Consecutive Ones(https://leetcode.com/problems/max-consecutive-ones/#/description)
  */
 public class MaxConsecutiveOnes {
 

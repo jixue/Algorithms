@@ -17,9 +17,18 @@ import java.util.List;
 
     Output:
     [2,3]
+
+ 442.Find All Duplicates in an Array(https://leetcode.com/problems/find-all-duplicates-in-an-array/#/description)
  */
 public class DuplicateNumber {
 
+    /**
+     * 转化成元素下标来实现;
+     * 遍历数组,如果下标对应数组元素大于0,说明该元素目前出现一次,对应元素值变成负数;
+     * 如果元素小于0,说明前面遍历过程中元素已经出现过一次,现在又遍历到,因此该元素出现两次,即重复元素.
+     * @param nums
+     * @return
+     */
     public List<Integer> findDuplicates(int[] nums) {
         List<Integer> result = new ArrayList<Integer>();
         if(nums == null || nums.length == 0){
